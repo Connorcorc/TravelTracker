@@ -15,12 +15,13 @@ main {
 }
 
 .header-box{
-  color: white;
+  font-size: 30px;
+  color: black;
   background-color: #D0C9C0;
   height: 150px;
   margin: 75px;
   border-style: solid;
-  border-color: white;
+  border-color: #FECD70;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -31,13 +32,13 @@ main {
 .card-section {
   height: 470px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
 .card {
 
-  height: 100%;
+  height: 70%;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -51,7 +52,7 @@ main {
 }
 .card:hover {
   background-position: 0;
-  box-shadow: 2px 2px 5px 1px #609669;
+  box-shadow: 4px 2px 5px 4px #FECD70;
   background-color: #EFEAD8;
   color: black;
 }
