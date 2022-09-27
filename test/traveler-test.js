@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import Traveler from '../src/Traveler'
 import { travelerTestData, tripTestData, destinationData } from '../test/test-data.js'
 
-describe.only('Traveler', () => {
+describe('Traveler', () => {
   let  traveler1, traveler2, traveler3
 
   beforeEach(() => {
