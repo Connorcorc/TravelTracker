@@ -1,25 +1,60 @@
 body {
   height: 100%;
-  background-color: #5F7161
+  background-image: url("https://wallpaperaccess.com/full/865178.jpg");
+  background-size: fill;
 }
 main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   gap: 5px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: normal;
   font-style: normal;
   text-align: center;
 }
+img {
+  border-radius: 20px;
+  opacity: none;
+}
 
-.header-box{
-  font-size: 30px;
+button {
+  background-color: #3F3C3C;
+  color: white;
+  border-radius: 6px;
+}
+.top-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.welcome-box {
+  opacity: 0.8;
+  font-size: 20px;
   color: black;
   background-color: #D0C9C0;
   height: 150px;
-  margin: 75px;
+  width: 25%;
+  margin-top: 18px;
+  border-style: solid;
+  border-color: #FECD70;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-box{
+  opacity: 0.8;
+  font-size: 38px;
+  color: black;
+  background-color: #D0C9C0;
+  height: 150px;
+  width: 60%;
+  margin-top: 18px;
   border-style: solid;
   border-color: #FECD70;
   border-radius: 20px;
@@ -29,30 +64,58 @@ main {
   justify-content: center;
 }
 
-.card-section {
+.card-section, .trips-section {
+  margin-top: 18px;
   height: 470px;
+  width: 100%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
-
 .card {
 
-  height: 70%;
+  height: 90%;
   margin: 20px;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  color: white;
-  font-size: 40px;
+  align-items: center;
+  width: 22%;
+  color: #3F3C3C;
+  font-size: 18px;
   background-color: #D0C9C0;
-  opacity: 0.9;
+  opacity: 0.8;
   border-radius: 25px;
   transition: all 0.1s ease-in-out;
 }
-.card:hover {
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#pastCard, #pendingCard, #upcomingCard, #bookCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover, .upcoming-card:hover, .header-box:hover, .info-card:hover {
   background-position: 0;
+  opacity: 0.9;
   box-shadow: 4px 2px 5px 4px #FECD70;
   background-color: #EFEAD8;
   color: black;
+  font-style: oblique;
+}
+
+.trip-data-card {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none
 }

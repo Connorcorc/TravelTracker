@@ -9,18 +9,36 @@
   </head>
   <body>
     <main>
+      <section class="top-section">
       <div class="header-box" id="headerBox">
-        <h1 class="main-header">🌴 T R A V E L T R A C K E R 🌴</h1>
+        <h1 class="main-header">V  A  G  A  B  O  N  D</h1>
       </div>
-      <section class="card-section" id="cardSection">
-        <div class="card" id="card"></div>
-        <div class="card" id="card"></div>
-        <div class="card" id="card"></div>
-        <div class="card" id="card"></div>
+      <div class=" hidden welcome-box" id="welcomeBox"></div>
+    </section>
+      <section class="card-section" id="cardSection" >
+        <div class="card" id="upcomingCard">UPCOMING
+          <img class="image" src='../images/takeoff1.png' height=100px width=100px>
+        </div>
+        <div class="card" id="pastCard">PAST
+          <img class="image" src='../images/arrival.png' height=100px width=100px>
+        </div>
+        <div class="card" id="pendingCard">PENDING
+          <img class="image" src='../images/question.png' height=100px width=100px>
+        </div>
+        <div class="card" id="bookCard">BOOK
+          <form class="book-form" id=bookForm>
+          <h4>Destination</h4>
+          <input type="list" class="destination-option" id=destinationOption></input><br>
+          <input type="date" class="date-input" id="dateInput" format="yyyy/mm/dd"></input><br>
+          <button class="submit-button" id="submitButton">Send It</button>
+          </form
+        </div>
+      </section>
+      <section class="hidden trips-section" id="tripsSection">
+        <div class="trip-data-card" id="tripDataCard"></div>
       </section>
     </main>
-    <!-- Do not include the scripts.js or class files here - it is done by the webpack server -->
     <script src="bundle.js"></script>
-
+    <script src="path/to/dayjs/dayjs.min.js"></script>
   </body>
 </html>

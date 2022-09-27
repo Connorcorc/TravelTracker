@@ -1,7 +1,7 @@
 const fetchData = (data) => {
-    return fetch(data)
-            .then(response => response.json())
-            .catch(err => console.log(err))
+  return fetch(data)
+    .then(response => response.json())
+    .catch(err => console.log(err))
 }
 
 const apiCalls = {
